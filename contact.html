@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+</head>
+<body>
+	<h3><a href="index.html">Back to Profil</a></h3>
+	<h2>My Contact Details</h2>
+	<p>Hubungi saya secara manual melalui :<br></p>
+	<!--Meletakan dalam tabel agar rapi-->
+	<table>
+		<tr>
+			<td>Email</td>
+			<td>: madeajus59@gmail.com</td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td>: 08123456744</td>
+		</tr>
+		<tr>
+			<td>Instagram</td>
+			<td>: kd.setiawan9</td>
+		</tr>
+	</table>
+	<hr>
+	<h3>Tulis Pesan</h3>
+	<div style="border: 2px solid; padding: 10px 0;">
+		<form action="mailto:madeajus59@gmail.com" method="post" enctype="text/plain">
+			<!-- Membungkus inputan dan lebel dengan tabel-->
+			<table cellpadding="7px">
+				<tr> <!--baris 1-->
+					<td><label for="nama">Your Name : </label></td>
+					<td><input type="text" name="nama"><br></td>
+				</tr>
+				<tr> <!--baris 2-->
+					<td><label for="email">Your Email : </label></td>
+					<td><input type="email" name="email"><br></td>
+				</tr>
+				<tr> <!--baris 3-->
+					<td valign="top"><label for="pesan">Pesan :</label><br></td>
+					<td><textarea name="pesan" rows="10px" cols="30px"></textarea><br></td>
+				</tr>
+				<tr> <!--baris 4-->
+					<td><label for="file">Bukti/opsional</label></td>
+					<td><input type="file" name="file"></td> 
+				</tr>
+				<tr> <!--baris 5-->
+					<td><label for="select">Pilih Kategori</label></td>
+					<td>
+						<select> <!--Meletakan tag select di dalam tabel-->
+							<option selected>--pilih kategori--</option> <!--pilihan default-->
+							<option>Keluhan</option>
+							<option>Saran</option>
+							<option>Kritik</option>
+						</select>
+					</td>
+				</tr>			
+				<tr> <!--baris 6-->
+					<td></td>
+					<td><input type="submit" value="Kirim Pesan"></td>
+				</tr>
+			</table>		
+		</form>
+	</div>
+</body>
+</html>
